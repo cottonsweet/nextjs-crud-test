@@ -2,7 +2,7 @@
 import Link from "next/link";
 
 // Data
-import { HeaderList } from "../../../Data/data";
+import { HeaderList } from "../../../data/data";
 
 // Components
 import HeaderSVG from "./HeaderSVG";
