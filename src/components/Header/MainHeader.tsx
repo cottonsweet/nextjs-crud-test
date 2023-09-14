@@ -1,8 +1,8 @@
 // Next
 import Link from "next/link";
 
-// Data
-import { HeaderList } from "../../../data/data";
+// // Data
+// import { HeaderList } from "../../../data/data";
 
 // Components
 import HeaderSVG from "./HeaderSVG";
@@ -17,13 +17,13 @@ export default function MainHeader() {
         <Link href="/">홈</Link>
       </div>
       <nav className="flex gap-7">
-        {HeaderList?.map((item, _) => {
+        {/* {HeaderList?.map((item, _) => {
           return (
             <Link key={item.path} href={item.path}>
               {item.name}
             </Link>
           );
-        })}
+        })} */}
       </nav>
     </header>
   );
