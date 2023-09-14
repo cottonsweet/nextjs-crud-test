@@ -6,6 +6,7 @@ export default function HeaderTitle() {
       height="26"
       viewBox="0 0 166 26"
       fill="none"
+      className="w-32"
     >
       <g clipPath="url(#clip0_8_667)">
         <path
