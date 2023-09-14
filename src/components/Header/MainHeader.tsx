@@ -5,14 +5,14 @@ import Link from "next/link";
 import { HeaderList } from "../../../Data/data";
 
 // Components
-import HeaderTitle from "./HeaderTitle";
+import HeaderSVG from "./HeaderSVG";
 
 export default function MainHeader() {
   return (
-    <header className="w-full max-w-screen-xl flex justify-between items-center bg-[#001e4c] text-base px-5 py-3 text-white mx-auto">
+    <header className="w-full flex justify-between items-center bg-[#001e4c] px-5 py-3 text-white mx-auto">
       <div className="flex items-center gap-8">
         <Link href="/notice">
-          <HeaderTitle />
+          <HeaderSVG />
         </Link>
         <Link href="/">홈</Link>
       </div>
