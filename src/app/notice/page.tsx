@@ -1,6 +1,5 @@
 // Components
 import NoticeHeader from "@/components/Notice/NoticeHeader";
-
 import NoticeData from "@/components/Notice/NoticeData";
 
 export default function NoticePage() {
