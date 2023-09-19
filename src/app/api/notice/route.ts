@@ -1,21 +1,23 @@
-// Next
-// import { NextApiRequest, NextApiResponse } from "next";
-import { NextResponse } from "next/server";
+// lib
 import prisma from "@/app/lib/prisma";
+import dayjs from "dayjs";
 
 export async function GET() {
   const notices = await prisma.notice.findMany();
   return new Response(JSON.stringify(notices));
 }
 
-export async function POST() {
+export async function POST(req: Request) {
+  const dbNow = (): Date => dayjs().add(9, "hour").toDate();
+  const data = await req.json();
+
   const notice = await prisma.notice.create({
     data: {
-      id: 2,
-      createdAt: new Date(),
-      title: "안녕하세요!",
-      body: "본문 테스트.",
+      createdAt: dbNow(),
+      title: data.title,
+      body: data.desc,
     },
   });
-  return new Response(JSON.stringify("일단 포스트는.."));
+
+  return new Response(JSON.stringify("포스트 요청 완료"));
 }
