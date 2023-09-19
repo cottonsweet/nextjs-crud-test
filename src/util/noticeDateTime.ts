@@ -28,4 +28,6 @@ const noticeDateTiem = (currentDate: string) => {
   return elapsedText;
 };
 
+export const sliceCreateAt = (date: string) => date.slice(0, 10);
+
 export default noticeDateTiem;
