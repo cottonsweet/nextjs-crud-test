@@ -18,6 +18,6 @@ export async function POST(req: Request) {
       body: data.desc,
     },
   });
-
+  console.log(notice);
   return new Response(JSON.stringify("포스트 요청 완료"));
 }
