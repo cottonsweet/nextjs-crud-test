@@ -2,6 +2,7 @@ export interface NoticeReq {
   createAt: Date;
   title: string;
   desc: string;
+  name: string
 }
 
 export async function getNoticeData() {

@@ -16,6 +16,7 @@ export async function POST(req: Request) {
       createdAt: dbNow(),
       title: data.title,
       body: data.desc,
+      name:data.name
     },
   });
   console.log(notice);
