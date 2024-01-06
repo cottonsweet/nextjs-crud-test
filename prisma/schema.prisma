@@ -13,7 +13,8 @@ datasource db {
 
 model Notice {
   id        Int      @id @default(autoincrement()) @unique
-  createdAt DateTime @default(now())
+  name      String
   title     String
   body      String
+  createdAt DateTime @default(now())
 }
